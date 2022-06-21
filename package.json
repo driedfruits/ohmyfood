@@ -1,0 +1,11 @@
+{
+  "name": "allan__couchy__1__code__062022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}
