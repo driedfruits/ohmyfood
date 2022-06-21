@@ -1,0 +1,40 @@
+
+
+/* Location */
+.loc {
+    @include bac($color-white);
+    text-align: center;
+
+    &__form {
+        @include bac(#f2f2f2);
+
+        &__sch {
+            height: 50px;
+            @include bcgd(#f2f2f2);
+            border-color: transparent;
+            font-size: 18px;
+            padding-left: 10px;
+        }
+    }
+
+    &__msg {
+        height: auto;
+        display: flex;
+        font-size: 25px;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        
+        &__hdg {
+            padding: 0px 20px;
+            margin-top: 20px;
+            margin-bottom: 0px;
+        }
+
+        &__txt {
+            font-weight: 300;
+            @include cl(#f2f2f2);
+        }
+    }
+}
+
