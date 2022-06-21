@@ -1,0 +1,24 @@
+
+
+$color-primary: #9256dc;
+$color-secondary: #ff7ad9;
+$color-tertiary: #98e2cf;
+
+$color-white: #ffffff;
+$color-black: #000000;
+
+@mixin bac($color) {
+    @if (lightness($color) > 70) {
+        background-color: darken($color,5);
+    } @else {
+        background-color: lighten($color,20);
+    }
+}
+
+@mixin col($color) {
+    @if (lightness($color) > 65) {
+        color: darken($color,30);
+    } @else {
+        color: lighten($color,50);
+    }
+}
