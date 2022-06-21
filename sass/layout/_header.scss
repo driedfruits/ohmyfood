@@ -1,0 +1,46 @@
+
+
+/* Header */
+.header {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+
+    &--algn {
+        align-items: center;
+    }
+    
+    &__blc {
+        display: flex;
+    }
+    
+    &__home {
+        width: 30%;
+        font-size: 20px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include pc {
+            width: 40%;
+        }
+    }
+
+    &__logo {
+        width: 200px;
+    
+        &--size {
+            width: 250px;
+        }
+    }
+
+    &__img {
+        @include pc {
+            width: 300px;
+        }
+    }
+}
+
