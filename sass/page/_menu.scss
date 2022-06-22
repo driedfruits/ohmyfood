@@ -1,0 +1,32 @@
+
+
+/* Couverture */
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__img {
+        width: 100%;
+        height: 600px;
+    }
+
+    &__hdg {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        font-size: 30px;
+        position: absolute;
+        padding: 20px;
+        @include bac($color-white);
+
+        &__elmt {
+            font-family: "shrikhand" ,serif;
+            font-size: 40px;
+            margin: 20px 10px;
+        }
+    }
+}
+
