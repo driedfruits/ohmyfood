@@ -6,15 +6,29 @@
     color: $color-white;
     padding: 20px;
 
+    &--marg {
+        @include tab {
+            margin-top: 20px;
+        }
+    }
+
     &__hdg {
         font-family: "shrikhand", serif;
         font-size: 25px;
+
+        @include tab {
+            padding-left: 40px;
+        }
     }
 
     &__list {
         list-style-type: none;
         font-size: 18px;
         padding: 0px;
+
+        @include tab {
+            padding-left: 40px;
+        }
 
         &__itm {
             margin-bottom: 10px;

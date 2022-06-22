@@ -5,6 +5,12 @@
 @import "./base/base";
 
 @import "./layout/header";
+
+.main {
+    width: 92%;
+    align-self: center;
+}
+
 @import "./layout/location";
 @import "./components/button";
 @import "./layout/functionning";

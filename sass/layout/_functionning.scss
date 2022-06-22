@@ -4,9 +4,18 @@
 .func {
     padding: 20px;
 
+    @include pc {
+        padding-right: 0px;
+    }
+
     &__mode {
         list-style-type: none;
         padding: 0px;
+
+        @include pc {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     
     &__step {
@@ -21,6 +30,12 @@
         &:hover {
             color: $color-primary;
             @include bac($color-primary);
+        }
+
+        @include pc {
+            width: 30%;
+            flex-wrap: wrap;
+            padding-right: 20px;
         }
     
         &__info {

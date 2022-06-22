@@ -8,6 +8,11 @@
     flex-direction: column;
     justify-content: center;
 
+    @include pc {
+        position: relative;
+        right: 35px;
+    }
+
     &__fav {
         font-size: 30px;
         transform-origin: bottom;
