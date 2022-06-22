@@ -8,6 +8,15 @@ $color-white: #ffffff;
 $color-black: #000000;
 
 $color-btn: linear-gradient(-5deg, $color-primary 10%, $color-secondary);
+$color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 76%));
+
+@mixin bosh {
+    box-shadow: 8px 8px 8px hsl(0, 0%, 79%);
+}
+
+@mixin drkn-bosh {
+    box-shadow: 8px 8px 8px hsl(0, 0%, 74%);
+}
 
 @mixin bac($color) {
     @if (lightness($color) > 70) {
