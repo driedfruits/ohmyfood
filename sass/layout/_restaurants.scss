@@ -1,0 +1,81 @@
+
+
+/* Restaurants */
+.rst {
+    padding: 20px;
+    @include bac($color-white);
+
+    &__card {
+        height: 300px;
+        background-color: $color-white;
+        border: transparent;
+        border-radius: 25px;
+        color: $color-black;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 70%;
+        border: 1px solid transparent;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        display: flex;
+        justify-content: flex-end;
+
+        &--blc {
+            height: 70%;
+        }
+
+        &__elmt {
+            width: 100%;
+            border-top-right-radius: 25px;
+            border-top-left-radius: 25px;
+            align-content: flex-end;
+        }
+
+        &__vign {
+            width: 75px;
+            height: 35px;
+            text-align: center;
+            background-color: $color-tertiary;
+            border: solid transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: absolute;
+            margin: 20px;
+            @include col($color-tertiary);
+        }
+    }
+
+    &__dsc {
+        height: 30%;
+        font-size: 18px;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 20px;
+    }
+
+    &__firm {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+        &__name {
+            font-size: 18px;
+            margin: 0px;
+        }
+
+        &__adr {
+            margin: 0px;
+        }
+    }
+}
+
