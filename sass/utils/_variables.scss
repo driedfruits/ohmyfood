@@ -22,7 +22,7 @@ $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 
     @if (lightness($color) > 70) {
         background-color: darken($color,5);
     } @else {
-        background-color: lighten($color,35);
+        background-color: lighten($color,25);
     }
 }
 
@@ -31,6 +31,14 @@ $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 
         color: darken($color,35);
     } @else {
         color: lighten($color,50);
+    }
+}
+
+@mixin hvr($color) {
+    @if (lightness($color) > 70) {
+        background-color: darken($color,5);
+    } @else {
+        background-color: lighten($color,35);
     }
 }
 
