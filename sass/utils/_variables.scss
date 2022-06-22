@@ -11,11 +11,11 @@ $color-btn: linear-gradient(-5deg, $color-primary 10%, $color-secondary);
 $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 76%));
 
 @mixin bosh {
-    box-shadow: 8px 8px 8px hsl(0, 0%, 79%);
+    box-shadow: 8px 8px 8px hsl(0, 0%, 89%);
 }
 
 @mixin drkn-bosh {
-    box-shadow: 8px 8px 8px hsl(0, 0%, 74%);
+    box-shadow: 8px 8px 8px hsl(0, 0%, 84%);
 }
 
 @mixin bac($color) {
