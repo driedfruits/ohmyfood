@@ -29,7 +29,7 @@
 
         &:hover {
             color: $color-primary;
-            @include bac($color-primary);
+            @include hvr($color-primary);
         }
 
         @include pc {
