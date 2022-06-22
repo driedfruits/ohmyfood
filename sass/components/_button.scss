@@ -1,5 +1,6 @@
 
 
+/* Bouton */
 .btn {
     width: 300px;
     height: 60px;
@@ -16,5 +17,14 @@
     justify-content: center;
     align-self: center;
     margin: 20px 0px;
+}
+
+.button {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    @include bac($color-white);
 }
 
