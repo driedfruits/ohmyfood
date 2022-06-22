@@ -8,9 +8,11 @@
     flex-direction: column;
     justify-content: center;
 
-    @include pc {
-        position: relative;
-        right: 35px;
+    &--pos {
+        @include pc {
+            position: relative;
+            right: 35px;
+        }
     }
 
     &__fav {
@@ -38,7 +40,9 @@
     }
 
     &:hover {
-        .icn__fav {          
+
+        .icn__fav { 
+                     
             &__emp {
                 opacity: 0;
                 transition: all 400ms linear 300ms;

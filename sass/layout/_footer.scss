@@ -2,9 +2,9 @@
 
 /* Footer */
 .footer {
-    @include bac($color-black);
     color: $color-white;
     padding: 20px;
+    @include bac($color-black);
 
     &--marg {
         @include tab {

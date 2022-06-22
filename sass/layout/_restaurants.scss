@@ -10,6 +10,7 @@
     }
 
     &__blc {
+        
         @include tab {
             display: flex;
             flex-wrap: wrap;

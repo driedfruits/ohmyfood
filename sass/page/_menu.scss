@@ -45,6 +45,7 @@
     }
 
     &__sct {
+
         &--1 {
             animation: appear 400ms ease-in-out;
         }
@@ -94,6 +95,9 @@
         text-overflow: ellipsis;
         padding: 10px;
 
+        @include pc {
+            width: 85%;
+        }
 
         &__hdg {
             font-size: 18px;
@@ -104,34 +108,49 @@
             margin: 0px;
         }
 
-        &:hover + .meal__check {
-            width: 25%;
+        &:hover {
+            width: 65%;
             transition: all ease-in-out 400ms;
-            
-            > .meal__check__elmt {
-                width: 100%;
-                
-                > .meal__check__icn {
-                    transform: rotate(2turn);
-                    transition: transform ease-in-out 400ms;
-                    opacity: 1;
-                }
-            }
-        }
 
-        @include pc {
-            &:hover + .meal__check {
-                width: 40%;
+            @include tab {
+                width: 75%;
+            }
+
+            @include pc {
+                width: 65%;
+            }
+
+            + .meal__check {
+                width: 35%;
+                transition: all ease-in-out 400ms;
+
+                @include tab {
+                    width: 25%;
+                }
+
+                @include pc {
+                    width: 35%;
+                }
+                
+                > .meal__check__elmt {
+                    width: 100%;
+                    
+                    > .meal__check__icn {
+                        transform: rotate(2turn);
+                        transition: transform ease-in-out 400ms;
+                        opacity: 1;
+                    }
+                }
             }
         }
     }
     
     &__check {
-        width: 3%;
+        width: 10%;
         display: flex;
 
         @include pc {
-            width: 10%;
+            width: 15%;
         }
 
         &__price {

@@ -2,8 +2,8 @@
 
 /* Location */
 .loc {
-    @include bac($color-white);
     text-align: center;
+    @include bac($color-white);
 
     @include tab {
         border-radius: 20px;
@@ -19,10 +19,10 @@
 
         &__sch {
             height: 50px;
-            @include bac(#f2f2f2);
             border-color: transparent;
             font-size: 18px;
             padding-left: 10px;
+            @include bac(#f2f2f2);
         }
     }
 
