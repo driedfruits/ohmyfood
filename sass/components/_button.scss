@@ -1,0 +1,20 @@
+
+
+.btn {
+    width: 300px;
+    height: 60px;
+    background: $color-btn;
+    text-decoration: none;
+    border-color: transparent;
+    border-radius: 35px;
+    font-size: 22px;
+    font-weight: 700;
+    color: $color-white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    margin: 20px 0px;
+}
+
