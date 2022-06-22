@@ -1,0 +1,38 @@
+
+
+/* loading spinner */
+.loader {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lighten($color-black, 15);
+    animation: hidden 100ms ease-in-out 3s forwards;  
+    z-index: 1;
+    
+    &::after {
+        content: "";
+        width: 250px;
+        height: 250px;
+        border: 5px solid transparent;
+        border-top: 10px solid $color-primary;
+        border-bottom: 10px solid $color-secondary;
+        border-radius: 50%;
+        animation: load 900ms infinite linear;
+    }
+    
+    &__hdg {
+        font-family: "shrikhand", serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: #fff;
+        position: absolute;
+    }
+}
+
