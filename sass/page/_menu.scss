@@ -37,14 +37,29 @@
 
 /* Menu */
 .meal {
+    width: 100%;
     padding: 20px;
     @include bac($color-white);
 
-    @include pc {
+    @include tab {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include pc {
+        flex-direction: row;
     }
 
     &__sct {
+
+        @include tab {
+            width: 70%;
+        }
+
+        @include pc {
+            width: 33%;
+        }
 
         &--1 {
             animation: appear 400ms ease-in-out;
@@ -81,7 +96,6 @@
         }
 
         @include pc {
-            width: 34%;
             padding: 20px;
         }
     }
@@ -91,9 +105,6 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         padding: 10px;
 
         @include pc {
@@ -102,10 +113,16 @@
 
         &__hdg {
             font-size: 18px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             margin: 0px;
         }
 
         &__compo {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
             margin: 0px;
         }
 
