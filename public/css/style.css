@@ -199,7 +199,7 @@ img {
 }
 .btn:hover {
   background: linear-gradient(-5deg, hsl(267deg, 66%, 62%) 10%, hsl(317deg, 100%, 76%));
-  box-shadow: 8px 8px 8px hsl(0deg, 0%, 84%);
+  box-shadow: 8px 8px 8px hsl(0deg, 0%, 79%);
 }
 
 .button {
@@ -494,12 +494,30 @@ img {
 
 /* Menu */
 .meal {
+  width: 100%;
   padding: 20px;
   background-color: #f2f2f2;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .meal {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 992px) {
+  .meal {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 768px) {
+  .meal__sct {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .meal__sct {
+    width: 33%;
   }
 }
 .meal__sct--1 {
@@ -533,7 +551,6 @@ img {
 }
 @media screen and (min-width: 992px) {
   .meal__sct {
-    width: 34%;
     padding: 20px;
   }
 }
@@ -542,9 +559,6 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   padding: 10px;
 }
 @media screen and (min-width: 992px) {
@@ -554,9 +568,15 @@ img {
 }
 .meal__dsc__hdg {
   font-size: 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0px;
 }
 .meal__dsc__compo {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   margin: 0px;
 }
 .meal__dsc:hover {
