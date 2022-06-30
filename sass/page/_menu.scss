@@ -1,112 +1,61 @@
 
 
-/* Couverture */
-.cover {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
-    &__img {
-        width: 100%;
-        height: 600px;
-    }
-
-    &__hdg {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        border-top-right-radius: 60px;
-        border-top-left-radius: 60px;
-        font-size: 30px;
-        position: absolute;
-        padding: 20px;
-        @include bac($color-white);
-
-        &__elmt {
-            font-family: "shrikhand" ,serif;
-            font-size: 40px;
-            margin: 20px 10px;
-
-            @include pc {
-                margin: 20px;
-                padding-left: 10px;
-            }
-        }
-    }
-}
-
 /* Menu */
 .meal {
     width: 100%;
-    padding: 20px;
+    padding: $padding;
     @include bac($color-white);
-
-    @include tab {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     @include pc {
+        display: flex;
         flex-direction: row;
     }
 
     &__sct {
-
-        @include tab {
-            width: 70%;
-        }
-
+        padding: calc($padding/2) $none;  
         @include pc {
-            width: 33%;
+            width: 34%;
+            padding: $padding;
         }
-
         &--1 {
             animation: appear 400ms ease-in-out;
         }
-
         &--2 {
             animation: appear 400ms ease-in-out 400ms;
         }
-
         &--3 {
             animation: appear 400ms ease-in-out 800ms;
         }
 
+        
         &__hdg {
             width: 50px;
             font-size: 20px;
             font-weight: 300;
             text-transform: uppercase;
-            border-bottom: 3px solid #98e2cf;
+            border-bottom: 3px solid $color-tertiary;
             margin-left: 10px;
         }
 
         &__elmt {
             height: 100px;
             display: flex;
-            background-color: #ffffff;
+            background-color: $color-white;
             border-radius: 25px;
             font-size: 18px;
             font-weight: 300;
             color: #000000;
             text-decoration: none;
             margin-bottom: 20px;
+            justify-content: space-between;
             @include bosh;
-        }
-
-        @include pc {
-            padding: 20px;
         }
     }
 
     &__dsc {
-        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;
-
+        padding: calc($padding/2);
         @include pc {
             width: 85%;
         }
@@ -116,36 +65,31 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            margin: 0px;
+            margin: $none;
         }
 
         &__compo {
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            margin: 0px;
+            margin: $none;
         }
 
         &:hover {
-            width: 65%;
-            transition: all ease-in-out 400ms;
-
+            transition: all ease-in-out $duration;
             @include tab {
-                width: 75%;
+                width: 80%;
             }
-
             @include pc {
-                width: 65%;
+                width: 60%;
             }
 
             + .meal__check {
-                width: 35%;
-                transition: all ease-in-out 400ms;
-
+                width: 30%;
+                transition: all ease-in-out $duration;
                 @include tab {
-                    width: 25%;
+                    width: 20%;
                 }
-
                 @include pc {
                     width: 35%;
                 }
@@ -155,7 +99,7 @@
                     
                     > .meal__check__icn {
                         transform: rotate(2turn);
-                        transition: transform ease-in-out 400ms;
+                        transition: transform ease-in-out $duration;
                         opacity: 1;
                     }
                 }
@@ -167,14 +111,10 @@
         width: 10%;
         display: flex;
 
-        @include pc {
-            width: 15%;
-        }
-
         &__price {
-            align-self: center;
             font-weight: 700;
-            margin-right: 10px;
+            align-self: center;
+            margin: $none calc($padding/2) $none $none;
             position: relative;
             top: 11px;
         }
@@ -182,7 +122,7 @@
         &__elmt {
             width: 0%;
             overflow: hidden;
-            background-color: #98e2cf;
+            background-color: $color-tertiary;
             border-top-right-radius: 25px;
             border-bottom-right-radius: 25px;
             display: flex;
@@ -193,7 +133,7 @@
 
         &__icn {
             font-size: 40px;
-            color: #ffffff;
+            color: $color-white;
             opacity: 0;
         }
     }

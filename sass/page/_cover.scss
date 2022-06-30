@@ -1,0 +1,37 @@
+
+
+/* Couverture */
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__img {
+        width: 100%;
+        height: 600px;
+    }
+
+    &__hdg {
+        width: 100%;
+        display: flex;
+        font-size: 30px;
+        justify-content: space-between;
+        border-top-right-radius: 60px;
+        border-top-left-radius: 60px;
+        position: absolute;
+        padding: $padding;
+        @include bac($color-white);
+
+        &__elmt {
+            font-size: 35px;
+            font-family: "shrikhand", serif;
+            margin: 20px 10px;
+            @include pc {
+                font-size: 40px;
+                padding-left: calc($padding/2);
+                margin: 20px;
+            }
+        }
+    }
+}
+
