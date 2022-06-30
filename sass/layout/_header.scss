@@ -13,6 +13,9 @@
     
     &__blc {
         display: flex;
+        @include pc {
+            justify-content: center;
+        }
     }
     
     &__home {
@@ -29,7 +32,7 @@
 
     &__logo {
         width: 200px;
-        &--size {
+        @include tab {
             width: 250px;
         }
         @include pc {
