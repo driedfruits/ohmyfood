@@ -19,7 +19,7 @@
             height: 50px;
             border-color: transparent;
             font-size: 18px;
-            padding-left: 10px;
+            padding-left: calc($padding/2);
             @include bac(#f2f2f2);
         }
     }
