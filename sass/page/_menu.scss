@@ -52,10 +52,14 @@
     }
 
     &__dsc {
+        width: 90%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         padding: calc($padding/2);
+        @include tab {
+            width: 95%;
+        }
         @include pc {
             width: 85%;
         }
@@ -76,12 +80,13 @@
         }
 
         &:hover {
+            width: 70%;
             transition: all ease-in-out $duration;
             @include tab {
                 width: 80%;
             }
             @include pc {
-                width: 60%;
+                width: 65%;
             }
 
             + .meal__check {
@@ -110,11 +115,17 @@
     &__check {
         width: 10%;
         display: flex;
+        @include tab {
+            width: 5%;
+        }
+        @include pc {
+            width: 15%;
+        }
 
         &__price {
             font-weight: 700;
             align-self: center;
-            margin: $none calc($padding/2) $none $none;
+            padding: $none calc($padding/2) $none $none;
             position: relative;
             top: 11px;
         }
