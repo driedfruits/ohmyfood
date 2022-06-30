@@ -105,6 +105,11 @@ img {
 .header__blc {
   display: flex;
 }
+@media screen and (min-width: 992px) {
+  .header__blc {
+    justify-content: center;
+  }
+}
 .header__home {
   width: 30%;
   display: flex;
@@ -121,8 +126,10 @@ img {
 .header__logo {
   width: 200px;
 }
-.header__logo--size {
-  width: 250px;
+@media screen and (min-width: 768px) {
+  .header__logo {
+    width: 250px;
+  }
 }
 @media screen and (min-width: 992px) {
   .header__logo {
@@ -130,9 +137,11 @@ img {
   }
 }
 
-.main {
-  width: 92%;
-  align-self: center;
+@media screen and (min-width: 768px) {
+  .main {
+    width: 92%;
+    align-self: center;
+  }
 }
 
 /* Location */
