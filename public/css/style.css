@@ -547,10 +547,16 @@ img {
   box-shadow: 8px 8px 8px hsl(0deg, 0%, 89%);
 }
 .meal__dsc {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
+}
+@media screen and (min-width: 768px) {
+  .meal__dsc {
+    width: 95%;
+  }
 }
 @media screen and (min-width: 992px) {
   .meal__dsc {
@@ -571,6 +577,7 @@ img {
   margin: 0px;
 }
 .meal__dsc:hover {
+  width: 70%;
   transition: all ease-in-out 400ms;
 }
 @media screen and (min-width: 768px) {
@@ -580,7 +587,7 @@ img {
 }
 @media screen and (min-width: 992px) {
   .meal__dsc:hover {
-    width: 60%;
+    width: 65%;
   }
 }
 .meal__dsc:hover + .meal__check {
@@ -609,10 +616,20 @@ img {
   width: 10%;
   display: flex;
 }
+@media screen and (min-width: 768px) {
+  .meal__check {
+    width: 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .meal__check {
+    width: 15%;
+  }
+}
 .meal__check__price {
   font-weight: 700;
   align-self: center;
-  margin: 0px 10px 0px 0px;
+  padding: 0px 10px 0px 0px;
   position: relative;
   top: 11px;
 }
