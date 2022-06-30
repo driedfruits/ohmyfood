@@ -10,7 +10,7 @@ $color-tertiary: #98e2cf;
 $color-white: #fff;
 
 $btn: linear-gradient(-5deg, $color-primary 10%, $color-secondary);
-$btn-hov: linear-gradient(-5deg, #985ede 10%, #ff85dc);
+$btn-hvr: linear-gradient(-5deg, #985ede 10%, #ff85dc);
 
 $breakpoints: (tab:768px, pc:992px);
 $duration: 400ms;
@@ -23,7 +23,7 @@ $padding: 20px;
 @mixin bosh {
     box-shadow: 8px 8px 8px hsl(0, 0%, 89%);
 }
-@mixin bosh-drkn {
+@mixin bosh-hvr {
     box-shadow: 8px 8px 8px hsl(0, 0%, 79%);
 }
 
