@@ -2,15 +2,13 @@
 
 /* Restaurants */
 .rst {
-    padding: 20px;
+    padding: $padding;
     @include bac($color-white);
-
     @include tab {
         border-radius: 20px;
     }
 
-    &__blc {
-        
+    &__blc {  
         @include tab {
             display: flex;
             flex-wrap: wrap;
@@ -29,11 +27,9 @@
         text-decoration: none;
         margin-bottom: 20px;
         @include bosh;
-
         @include tab {
             width: 45%;
         }
-
         @include pc {
             width: 24%;
         }
@@ -47,7 +43,6 @@
         border-top-left-radius: 25px;
         display: flex;
         justify-content: flex-end;
-
         &--blc {
             height: 70%;
         }
@@ -80,7 +75,7 @@
         font-weight: 300;
         display: flex;
         justify-content: space-between;
-        padding: 5px 20px;
+        padding: 5px $padding;
     }
 
     &__firm {
@@ -92,11 +87,11 @@
 
         &__name {
             font-size: 18px;
-            margin: 0px;
+            margin: $none;
         }
 
         &__adr {
-            margin: 0px;
+            margin: $none;
         }
     }
 }

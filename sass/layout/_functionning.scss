@@ -2,16 +2,14 @@
 
 /* Fonctionnement */
 .func {
-    padding: 20px;
-
+    padding: $padding;
     @include pc {
-        padding-right: 0px;
+        padding-right: $none;
     }
 
     &__mode {
         list-style-type: none;
-        padding: 0px;
-
+        padding: $none;
         @include pc {
             display: flex;
             justify-content: space-between;
@@ -26,32 +24,27 @@
         margin: 20px 15px;
         @include bac($color-white);
         @include col($color-white);
-
         &:hover {
             color: $color-primary;
-            @include hvr($color-primary);
+            @include hov($color-primary);
         }
-
         @include pc {
             width: 30%;
             flex-wrap: wrap;
-            padding-right: 20px;
-        }
-    
+            padding-right: $padding;
+        } 
         &__info {
             display: flex;
             font-size: 20px;
             font-weight: 700;
             color: $color-black;
-            margin: 0px;
+            margin: $none;
         }
-
         &__icn {
             display: flex;
             flex-direction: column;
             justify-content: center;
             text-align: center;
-
             &--num {
                 width: 30px;
                 height: 30px;
@@ -62,10 +55,9 @@
                 position: relative;
                 right: 15px;
             }
-
             &--scd {
                 font-size: 25px;
-                margin: 0px 20px;
+                margin: $none 20px;
             }
         }
     }

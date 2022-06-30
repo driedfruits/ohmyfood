@@ -4,14 +4,12 @@
 .loc {
     text-align: center;
     @include bac($color-white);
-
     @include tab {
         border-radius: 20px;
     }
 
     &__form {
         @include bac(#f2f2f2);
-
         @include tab {
             border-top-right-radius: 20px;
             border-top-left-radius: 20px;
@@ -32,10 +30,10 @@
         font-size: 25px;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
+        padding: $padding;
         
         &__hdg {
-            padding: 0px 20px;
+            padding: $none $padding;
             margin-top: 20px;
             margin-bottom: 0px;
         }

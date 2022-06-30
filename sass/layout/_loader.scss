@@ -13,9 +13,8 @@
     align-items: center;
     justify-content: center;
     background-color: lighten($color-black, 15);
-    animation: hidden 100ms ease-in-out 3s forwards;  
-    z-index: 1;
-    
+    animation: hidden 100ms ease-in-out 3000ms forwards;  
+    z-index: 1; 
     &::after {
         content: "";
         width: 250px;
@@ -31,7 +30,7 @@
         font-family: "shrikhand", serif;
         font-weight: 700;
         font-size: 35px;
-        color: #fff;
+        color: $color-white;
         position: absolute;
     }
 }

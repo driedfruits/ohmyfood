@@ -7,19 +7,18 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     &--pos {
         @include pc {
             position: relative;
-            right: 35px;
+            margin-right: 20px;
         }
     }
 
     &__fav {
         font-size: 30px;
         transform-origin: bottom;
-        
-        &__emp {
+
+        &__emp { 
             @include col($color-black);
         }
 
@@ -27,12 +26,10 @@
             opacity: 0;
             position: absolute;
             transform: scale(0);
-            transition: all 400ms linear;
-
+            transition: all $duration linear;
             &--pink {
                 color: $color-secondary;
             }
-        
             &--purp {
                 color: $color-primary;
             }
@@ -40,22 +37,19 @@
     }
 
     &:hover {
+        .icn__fav {
 
-        .icn__fav { 
-                     
             &__emp {
                 opacity: 0;
-                transition: all 400ms linear 300ms;
-            }
-            
+                transition: all $duration linear 300ms;
+            }  
+
             &__full {
                 z-index: 1;
                 transform: scale(1);
-
                 &--pink {
                     opacity: 0.9;
-                }
-            
+                }      
                 &--purp {
                     opacity: 0.5;
                 }

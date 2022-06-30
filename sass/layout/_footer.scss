@@ -3,9 +3,8 @@
 /* Footer */
 .footer {
     color: $color-white;
-    padding: 20px;
+    padding: $padding;
     @include bac($color-black);
-
     &--marg {
         @include tab {
             margin-top: 20px;
@@ -13,21 +12,19 @@
     }
 
     &__hdg {
-        font-family: "shrikhand", serif;
         font-size: 25px;
-
+        font-family: "shrikhand", serif;
         @include tab {
-            padding-left: 40px;
+            padding-left: calc($padding*2);
         }
     }
 
     &__list {
-        list-style-type: none;
         font-size: 18px;
-        padding: 0px;
-
+        list-style-type: none;
+        padding: $none;
         @include tab {
-            padding-left: 40px;
+            padding-left: calc($padding*2);
         }
 
         &__itm {
