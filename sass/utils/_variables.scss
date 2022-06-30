@@ -1,22 +1,33 @@
 
 
+/* Variables */ 
+
+
+$color-black: #000;
 $color-primary: #9256dc;
 $color-secondary: #ff7ad9;
 $color-tertiary: #98e2cf;
+$color-white: #fff;
 
-$color-white: #ffffff;
-$color-black: #000000;
+$btn: linear-gradient(-5deg, $color-primary 10%, $color-secondary);
+$btn-hov: linear-gradient(-5deg, #985ede 10%, #ff85dc);
 
-$color-btn: linear-gradient(-5deg, $color-primary 10%, $color-secondary);
-$color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 76%));
+$breakpoints: (tab:768px, pc:992px);
+$duration: 400ms;
+$none: 0px;
+$padding: 20px;
+
+
+/* Mixins */
 
 @mixin bosh {
     box-shadow: 8px 8px 8px hsl(0, 0%, 89%);
 }
-
-@mixin drkn-bosh {
+@mixin bosh-drkn {
     box-shadow: 8px 8px 8px hsl(0, 0%, 79%);
 }
+
+
 
 @mixin bac($color) {
     @if (lightness($color) > 70) {
@@ -25,7 +36,6 @@ $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 
         background-color: lighten($color,25);
     }
 }
-
 @mixin col($color) {
     @if (lightness($color) > 65) {
         color: darken($color,35);
@@ -33,8 +43,7 @@ $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 
         color: lighten($color,50);
     }
 }
-
-@mixin hvr($color) {
+@mixin hov($color) {
     @if (lightness($color) > 70) {
         background-color: darken($color,5);
     } @else {
@@ -42,14 +51,12 @@ $color-lghtn-btn: linear-gradient(-5deg, hsl(267, 66%, 62%) 10%, hsl(317, 100%, 
     }
 }
 
-$breakpoints: (tab:768px, pc:992px);
 
 @mixin tab {
     @media screen and (min-width: map-get($breakpoints,tab)) {
         @content;
     }
 }
-
 @mixin pc {
     @media screen and (min-width: map-get($breakpoints,pc)) {
         @content;
