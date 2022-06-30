@@ -9,8 +9,10 @@
 @import "./layout/header";
 
 .main {
-    width: 92%;
-    align-self: center;
+    @include tab {
+        width: 92%;
+        align-self: center;
+    }
 }
 
 @import "./layout/location";
