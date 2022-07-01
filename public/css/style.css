@@ -111,7 +111,7 @@ img {
   }
 }
 .header__home {
-  width: 30%;
+  width: 35%;
   display: flex;
   font-size: 20px;
   flex-direction: column;
@@ -388,10 +388,13 @@ img {
   flex-direction: column;
   justify-content: center;
 }
+.icn--pos {
+  width: 10%;
+}
 @media screen and (min-width: 992px) {
   .icn--pos {
-    position: relative;
-    margin-right: 20px;
+    width: 5%;
+    margin-right: 15px;
   }
 }
 .icn__fav {
@@ -624,11 +627,6 @@ img {
 .meal__check {
   width: 10%;
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .meal__check {
-    width: 5%;
-  }
 }
 @media screen and (min-width: 992px) {
   .meal__check {
