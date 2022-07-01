@@ -8,9 +8,10 @@
     flex-direction: column;
     justify-content: center;
     &--pos {
+        width: 10%;
         @include pc {
-            position: relative;
-            margin-right: 20px;
+            width: 5%;
+            margin-right: 15px;
         }
     }
 

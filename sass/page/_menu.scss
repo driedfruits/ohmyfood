@@ -115,9 +115,6 @@
     &__check {
         width: 10%;
         display: flex;
-        @include tab {
-            width: 5%;
-        }
         @include pc {
             width: 15%;
         }
