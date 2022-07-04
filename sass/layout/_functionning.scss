@@ -24,15 +24,15 @@
         margin: 20px 15px;
         @include bac($color-white);
         @include col($color-white);
+        @include pc {
+            width: 33%;
+            flex-wrap: nowrap;
+            padding-right: $padding;
+        } 
         &:hover {
             color: $color-primary;
             @include hov($color-primary);
         }
-        @include pc {
-            width: 30%;
-            flex-wrap: wrap;
-            padding-right: $padding;
-        } 
         &__info {
             display: flex;
             font-size: 20px;
