@@ -265,16 +265,16 @@ h1 {
   background-color: #f2f2f2;
   color: #a6a6a6;
 }
+@media screen and (min-width: 992px) {
+  .func__step {
+    width: 33%;
+    flex-wrap: nowrap;
+    padding-right: 20px;
+  }
+}
 .func__step:hover {
   color: #9256dc;
   background-color: #f1eafb;
-}
-@media screen and (min-width: 992px) {
-  .func__step {
-    width: 30%;
-    flex-wrap: wrap;
-    padding-right: 20px;
-  }
 }
 .func__step__info {
   display: flex;
