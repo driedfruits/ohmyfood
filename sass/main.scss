@@ -8,6 +8,10 @@
 @import "./layout/loader";
 @import "./layout/header";
 
+h1 {
+    font-size: 30px;
+}
+
 .main {
     @include tab {
         width: 92%;

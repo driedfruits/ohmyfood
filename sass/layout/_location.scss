@@ -16,6 +16,7 @@
         }
 
         &__sch {
+            width: 40%;
             height: 50px;
             border-color: transparent;
             font-size: 18px;
@@ -27,7 +28,6 @@
     &__msg {
         height: auto;
         display: flex;
-        font-size: 25px;
         flex-direction: column;
         align-items: center;
         padding: $padding;
@@ -39,6 +39,7 @@
         }
 
         &__txt {
+            font-size: 20px;
             font-weight: 300;
             @include col(#f2f2f2);
         }
