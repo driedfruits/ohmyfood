@@ -16,12 +16,18 @@
         }
 
         &__sch {
-            width: 40%;
+            width: 180px;
             height: 50px;
-            border-color: transparent;
             font-size: 18px;
+            border-color: transparent;
             padding-left: calc($padding/2);
             @include bac(#f2f2f2);
+            @include tab {
+                width: 230px;
+            }
+            @include pc {
+                width: 280px;
+            }
         }
     }
 
