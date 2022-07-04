@@ -137,6 +137,10 @@ img {
   }
 }
 
+h1 {
+  font-size: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .main {
     width: 92%;
@@ -164,6 +168,7 @@ img {
   }
 }
 .loc__form__sch {
+  width: 40%;
   height: 50px;
   border-color: transparent;
   font-size: 18px;
@@ -173,7 +178,6 @@ img {
 .loc__msg {
   height: auto;
   display: flex;
-  font-size: 25px;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -184,6 +188,7 @@ img {
   margin-bottom: 0px;
 }
 .loc__msg__txt {
+  font-size: 20px;
   font-weight: 300;
   color: #999999;
 }
